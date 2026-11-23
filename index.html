@@ -8,6 +8,7 @@
 :root{--paper:#f8f6ef;--ink:#23372e;--muted:#53635a;--line:#dcded3;--accent:#285443}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 "Noto Sans TC","Microsoft JhengHei",sans-serif}button,input,select{font:inherit;color:inherit}button,select{cursor:pointer}button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #577eab;outline-offset:3px}button{background:#fffdf7;border:1px solid var(--line);border-radius:10px;padding:8px 12px}button:hover:not(:disabled){border-color:var(--accent)}button:disabled{opacity:.48;cursor:default}.wrap{width:min(1320px,calc(100% - 60px));margin:auto}.top{border-bottom:1px solid var(--line);padding:15px 0}.top .wrap{display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.12em}.brand i{display:inline-block;width:20px;height:20px;vertical-align:middle;margin-right:9px;border-radius:50%;background:conic-gradient(#ce805c 25%,#e7cb9f 0 50%,#89a491 0 75%,#285443 0)}a{color:var(--accent);text-underline-offset:4px}.hero{margin-top:26px;padding:36px clamp(20px,4vw,58px);border-radius:22px;background:#e8eee3;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:32px}.hero h1{font:800 clamp(39px,6vw,74px)/1.1 "Noto Serif TC","PMingLiU",serif;letter-spacing:.07em;margin:0 0 14px}.hero p{margin:0;color:#395447}.hero-art{display:flex;height:150px;overflow:hidden;border-radius:85px 24px 85px 24px;transform:rotate(-3deg)}.hero-art i{flex:1}.filters{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}.filters input{min-width:0;width:min(320px,100%);border:1px solid var(--line);border-radius:10px;background:#fffdf8;padding:10px 14px}.tabs{display:flex;gap:6px;flex-wrap:wrap}.tabs button{border-radius:100px;padding:7px 13px}.primary,.tabs [aria-pressed="true"]{background:var(--accent);color:white;border-color:var(--accent)}.tray{margin-top:18px;border:1px solid #cfdacd;border-radius:14px;background:#edf1e8;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}.tray strong{display:block}.muted{color:var(--muted);font-size:.9rem}.chosen{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}.chosen i{width:16px;height:16px;border-radius:4px;border:1px solid #23372e35}.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.heading{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:20px 0 10px}.heading h2{margin:0;font-size:22px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}.card{border:1px solid var(--line);background:#fffefa;border-radius:15px;padding:13px;min-width:0}.card.selected{outline:2px solid #577b68;outline-offset:-2px}.card header,.card footer{display:flex;justify-content:space-between;gap:6px;align-items:center}.card h3{margin:0;font-size:17px}.swatches{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));gap:3px;margin:12px 0 9px}.swatch{padding:0;border:0;background:none;min-width:0;display:grid;gap:5px;text-align:center;border-radius:5px}.swatch i{display:block;height:55px;border-radius:5px;border:1px solid #23372e24}.swatch:hover i{outline:2px solid #23372e;outline-offset:-2px}.swatch code{font-size:clamp(9px,.85vw,12px);color:#434f46}.card footer button,.card select{font-size:13px;padding:6px 8px}.card select{background:#fffdf7;border:1px solid var(--line);border-radius:8px}.empty{grid-column:1/-1;padding:35px;text-align:center;border:1px dashed var(--line);border-radius:12px}.sources{margin:30px 0 38px;border-top:1px solid var(--line);padding-top:16px}.sources summary{cursor:pointer;font-weight:700}.sources li{margin:.4rem 0}#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#253e34;color:white;border-radius:10px;padding:10px 17px;max-width:calc(100% - 24px);box-shadow:0 5px 22px #0003;text-align:center}#toast:empty{visibility:hidden}dialog{max-width:calc(100% - 24px);width:500px;border:1px solid var(--line);border-radius:14px;color:var(--ink);background:#fffefa}dialog::backdrop{background:#23372e80}textarea{width:100%;min-height:90px;margin-bottom:8px;font:inherit}
 @media(max-width:1150px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.wrap{width:calc(100% - 36px)}}@media(max-width:540px){.wrap{width:calc(100% - 24px)}.grid,.hero{grid-template-columns:1fr}.hero{gap:15px;margin-top:14px;padding:23px}.hero-art{height:62px}.swatch code{font-size:11px}}
 .ai-settings{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-top:14px}.ai-settings select{border:1px solid var(--line);border-radius:8px;padding:6px 10px;background:#fffdf7}.card .ai-copy{width:100%;margin-top:8px;font-size:13px;padding:6px 8px;color:var(--accent);background:#edf1e8}
+.card-tools{display:grid;grid-template-columns:1fr 1fr;gap:6px}.card-tools button{font-size:13px;padding:6px 4px;margin-top:8px}.card-tools .ai-copy{width:auto}.preview-dialog{width:760px;max-height:90dvh;padding:18px}.preview-header{display:flex;align-items:center;justify-content:space-between;gap:10px}.preview-header h2{margin:0}.preview-header form{margin:0}.preview-dialog [role=group]{margin:12px 0;display:flex;gap:6px;flex-wrap:wrap}.preview-dialog [aria-pressed=true]{background:var(--accent);color:white}.sample{padding:16px;border:1px solid var(--sample-edge);border-radius:10px;background:var(--sample-page);color:var(--sample-text)}.sample h3{margin:0 0 8px;font-size:clamp(20px,4vw,29px);line-height:1.25}.sample p{margin:4px 0 10px}.sample-block,.sample-focus{padding:9px 12px;border:1px solid var(--sample-edge);border-radius:6px;background:var(--block-bg);color:var(--block-fg)}.sample-focus{background:var(--focus-bg);color:var(--focus-fg);display:inline-block}.sample-block+.sample-focus{margin-top:8px}.sample-lines{background:white;border:1px solid var(--sample-edge);padding:6px 12px}.sample-lines div{height:24px;border-bottom:1px solid var(--sample-edge)}.sample-chart{display:grid;gap:6px}.sample-bar{min-width:76px;border:1px solid var(--sample-edge);padding:4px 9px;border-radius:5px}.roles{width:100%;border-collapse:collapse;text-align:left;font-size:13px;margin:12px 0}.roles th,.roles td{padding:5px 4px;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.roles code{white-space:nowrap}.role-chip{display:inline-block;width:11px;height:11px;border:1px solid #23372e55;border-radius:3px;margin-right:4px}.preview-dialog .note{margin:8px 0}.preview-dialog .primary{margin-top:4px}
 </style>
 </head>
 <body>
@@ -17,7 +18,7 @@
 <div class="filters"><input type="search" id="search" aria-label="搜尋名稱、風格或 HEX 色碼" placeholder="搜尋名稱、風格或 HEX 色碼"><div class="tabs" id="tabs" role="group" aria-label="配色分類"></div></div>
 <div class="ai-settings">
 <label for="ai-purpose">AI 配色用途</label>
-<select id="ai-purpose"><option value="web">網頁／HTML</option><option value="slides">簡報／教室投影</option><option value="document">文件／A4 學習單</option></select>
+<select id="ai-purpose"><option value="web">網頁／HTML</option><option value="slides">簡報／教室投影</option><option value="document">文件／A4 學習單</option><option value="chart">圖表／活動分組</option></select>
 <span class="muted">複製 AI 指令後，貼到 ChatGPT、Gemini 或其他 AI。</span>
 </div>
 <section class="tray" aria-label="已選色組"><div><strong id="chosen-count"></strong><span id="chosen-hint" class="muted">選用多組後，可一起複製色碼。</span><div class="chosen" id="chosen-colors" aria-hidden="true"></div></div><div class="actions"><button id="clear">清除</button><button id="copy-selected" class="primary">複製已選色碼</button><button id="copy-ai-selected" class="primary">複製已選 AI 指令</button></div></section>
@@ -29,6 +30,13 @@
 <li>圖表配色（漸進、發散、類別） <a href="https://colorbrewer2.org/learnmore/schemes.html" target="_blank" rel="noopener">ColorBrewer</a></li>
 </ul></details>
 </main>
+<dialog id="preview-dialog" class="preview-dialog" aria-labelledby="preview-title">
+<header class="preview-header"><h2 id="preview-title">套色預覽</h2><form method="dialog"><button>關閉</button></form></header>
+<div id="preview-modes" role="group" aria-label="預覽用途"></div>
+<div id="preview-content"></div>
+<button type="button" class="primary" id="copy-preview">複製此方案的 AI 指令</button>
+<div id="preview-status" class="muted" role="status"></div>
+</dialog>
 <div id="toast" role="status"></div>
 <dialog id="manual"><form method="dialog"><label for="manual-text">請手動複製下方內容</label><textarea id="manual-text" readonly></textarea><button>關閉</button></form></dialog>
 <script>
@@ -83,7 +91,7 @@ function card(p) {
     <header><h3>${p.name}</h3><span class="muted">${p.category}</span></header>
     <div class="swatches" style="--cols:${Math.min(size,4)}">${colors.map(hex => `<button class="swatch" data-hex="${hex}" title="複製 ${hex}" aria-label="複製 ${hex}"><i style="background:${hex}"></i><code>${hex}</code></button>`).join('')}</div>
     <footer><select aria-label="${p.name}的顏色數量">${Array.from({length:7}, (_, index) => index+2).map(total => `<option value="${total}" ${total === size ? 'selected' : ''}>${total} 色</option>`).join('')}</select><div class="actions"><button data-select aria-pressed="${active}">${active ? '已選用' : '＋ 選用'}</button><button data-copy title="複製整組色碼">複製整組</button></div></footer>
-  <button class="ai-copy" data-copy-ai aria-label="複製${p.name}的 AI 配色指令">複製 AI 配色指令</button>
+  <div class="card-tools"><button data-preview aria-label="預覽${p.name}的套色">套色預覽</button><button class="ai-copy" data-copy-ai aria-label="複製${p.name}的 AI 配色指令">複製 AI 配色指令</button></div>
   </article>`;
 }
 function render() {
@@ -109,17 +117,96 @@ function copy(colors, label) {
 const aiUses = {
   web: '網頁或 HTML。請指定頁面背景、卡片底色、標題、正文、次要文字、按鈕底色與按鈕文字，以及必要的邊框，最後附上可貼入 CSS 的 :root 變數。',
   slides: '簡報與教室投影。請指定投影片底色、標題、內文、重點區塊底色與區塊文字。投影片資訊要讓後排容易辨識，正文對比盡量達 7:1。',
-  document: '文件或 A4 學習單。請指定頁面底色、標題、正文、表格表頭、格線及書寫區。書寫區用白底，並讓黑白影印後仍能透過粗體、框線及留白辨識區塊。'
+  document: '文件或 A4 學習單。請指定頁面底色、標題、正文、表格表頭、格線及書寫區。書寫區用白底，並讓黑白影印後仍能透過粗體、框線及留白辨識區塊。',
+  chart: '圖表或活動分組。請保留分類名稱和可辨識的文字或圖樣。漸進資料按數值排列，發散資料標出中點，分類資料用標籤區別。'
 };
+const purposeLabels = {web:'網頁', slides:'教室投影', document:'A4 學習單', chart:'圖表／分組'};
+let previewId;
+
+function luminance(hex) {
+  const linear = [1, 3, 5].map(index => {
+    const channel = parseInt(hex.slice(index, index + 2), 16) / 255;
+    return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
+  });
+  return linear[0] * 0.2126 + linear[1] * 0.7152 + linear[2] * 0.0722;
+}
+function contrast(a, b) {
+  const first = luminance(a) + 0.05;
+  const second = luminance(b) + 0.05;
+  return Math.max(first, second) / Math.min(first, second);
+}
+function scheme(id, purpose) {
+  const colors = cardColors(id);
+  const sorted = [...colors].sort((a, b) => luminance(b) - luminance(a));
+  const target = purpose === 'slides' ? 7 : 4.5;
+  const white = '#FFFFFF';
+  const black = '#000000';
+  const suggested = new Set();
+  const role = (name, bg) => {
+    const fg = [...sorted].reverse().find(hex => contrast(hex, bg) >= target)
+      || [black, white].sort((a,b) => contrast(b,bg) - contrast(a,bg))[0];
+    let background = bg;
+    if (contrast(fg, background) < target) {
+      background = fg === black ? '#F5F5F5' : '#222222';
+      suggested.add(background);
+    }
+    if (!colors.includes(fg)) suggested.add(fg);
+    if (!colors.includes(background)) suggested.add(background);
+    return {name, bg:background, fg, ratio:contrast(fg,background)};
+  };
+  const backdrop = purpose === 'document' || luminance(sorted[0]) < 0.5 ? white : sorted[0];
+  const page = role({web:'頁面背景／標題',slides:'投影片背景／標題',document:'紙面／正文',chart:'圖表背景／標題'}[purpose], backdrop);
+  const panel = role({web:'資訊卡底色／正文',slides:'說明區底色／內文',document:'表頭底色／文字',chart:'圖例底色／文字'}[purpose], sorted.find(hex => hex !== page.bg) || sorted[0]);
+  const focus = role(purpose === 'web' ? '按鈕底色／標籤' : '重點底色／文字', sorted.at(-1));
+  const groups = purpose === 'chart' ? colors.slice(0, 4).map((hex, index) => role('第 ' + (index + 1) + ' 組', hex)) : [];
+  const rows = purpose === 'chart' ? [page, ...groups] : [page, panel, focus];
+  const edge = [...colors, '#333333', black, white].find(hex => rows.every(row => contrast(hex, row.bg) >= 3));
+  if (edge && !colors.includes(edge)) suggested.add(edge);
+  const used = new Set(rows.flatMap(row => [row.bg, row.fg]));
+  if (edge) used.add(edge);
+  return {page,panel,focus,groups,rows,edge,target,supplements:[...suggested].filter(hex => used.has(hex))};
+}
+function describeScheme(id, purpose) {
+  const result = scheme(id, purpose);
+  return [
+    `「${palettes[id].name}」`,
+    ...result.rows.map(({name,bg,fg,ratio}) => `- ${name}：底色 ${bg}、文字 ${fg}（${ratio.toFixed(2)}:1）`),
+    result.edge ? `- 區隔框線 ${result.edge}` : '- 用留白及文字標籤區隔，視相鄰背景分別設定框線。',
+    result.supplements.length ? `- 補色：${result.supplements.join('、')}（僅用於上方指定角色）` : ''
+  ].filter(Boolean).join('\n');
+}
 function aiPrompt(ids) {
+  const purpose = byId('ai-purpose').value;
   const colorList = ids.map(id => `- ${palettes[id].name}（${cardColors(id).length} 色）　${cardColors(id).join(', ')}`).join('\n');
   return [
-    `請幫我為以下用途配色。${aiUses[byId('ai-purpose').value]}`,
+    `請幫我為以下用途配色。${aiUses[purpose]}`,
     `候選色票（優先使用）\n${colorList}`,
-    '請按用途分配色碼。若色票缺少合適的背景色或文字色，可加入白、近黑或必要的深淺變體，請標示補充色與原因。',
-    '用 WCAG 對比公式核算實際相鄰的文字與底色。一般文字、表格小字及按鈕標籤至少 4.5:1，符合 WCAG 大字定義的標題至少 3:1。對比不足時請更換配色。若兩塊底色接近，請用清楚的邊框、留白或標題區分。',
-    '請用繁體中文表格列出用途、HEX 色碼、相鄰背景 HEX 和文字對比值，並給出可直接套用的一組方案。'
+    `請依照以下已實算的預覽方案套用色彩角色；如需因版面更換配色，請標明變更原因及新對比值。\n${ids.map(id => describeScheme(id,purpose)).join('\n\n')}`,
+    '用 WCAG 對比公式核算實際相鄰的文字與底色。一般文字、表格小字及按鈕標籤至少 4.5:1，符合 WCAG 大字定義的標題至少 3:1。若兩塊底色接近，請用清楚的邊框、留白或標題分區。',
+    '請用繁體中文表格列出用途、HEX 色碼、相鄰背景 HEX 和文字對比值。'
   ].join('\n\n');
+}
+function updatePreview() {
+  const purpose = byId('ai-purpose').value;
+  const {page,panel,focus,groups,rows,edge,target,supplements} = scheme(previewId,purpose);
+  byId('preview-title').textContent = `${palettes[previewId].name} · 套色預覽`;
+  byId('preview-status').textContent = '';
+  byId('preview-modes').innerHTML = Object.entries(purposeLabels).map(([key,label]) =>
+    `<button type="button" data-purpose="${key}" aria-pressed="${purpose === key}">${label}</button>`).join('');
+  const examples = {
+    web:'<h3>班級學習活動</h3><div class="sample-block">今天的任務 · 記下你最有印象的一個發現。</div><span class="sample-focus">開始練習</span>',
+    slides:'<h3>換個角度想一想</h3><div class="sample-block">先找出事實，再說說你的觀點。</div><span class="sample-focus">兩人討論 · 30 秒</span>',
+    document:'<h3>我的觀察筆記</h3><div class="sample-block">題目 · 寫下一件你觀察到的事。</div><div class="sample-lines" aria-label="白底書寫區"><div></div><div></div></div><span class="sample-focus">提示 · 可以從時間或地點寫起。</span>',
+    chart:`<h3>活動分組</h3><div class="sample-chart">${groups.map((row,index) => `<div class="sample-bar" style="width:${42 + index * 16}%;background:${row.bg};color:${row.fg}">${row.name}</div>`).join('')}</div>`
+  };
+  const swatch = hex => `<i class="role-chip" style="background:${hex}" aria-hidden="true"></i><code>${hex}</code>`;
+  byId('preview-content').innerHTML = `
+    <div class="sample" style="--sample-page:${page.bg};--sample-text:${page.fg};--block-bg:${panel.bg};--block-fg:${panel.fg};--focus-bg:${focus.bg};--focus-fg:${focus.fg};--sample-edge:${edge || page.fg}">${examples[purpose]}</div>
+    <table class="roles"><thead><tr><th>用途</th><th>底色</th><th>文字</th><th>對比值</th></tr></thead><tbody>
+    ${rows.map(row => `<tr><th scope="row">${row.name}</th><td>${swatch(row.bg)}</td><td>${swatch(row.fg)}</td><td>${row.ratio.toFixed(2)}:1</td></tr>`).join('')}
+    </tbody></table>
+    <p class="note muted">文字目標 ${target}:1 · ${edge ? '區隔框線 ' + edge : '以留白及標籤區隔'}</p>
+    ${supplements.length ? `<p class="note muted">預覽補色 ${supplements.join('、')}，用於提高文字對比或區隔底色。</p>` : ''}`;
 }
 async function copyText(value, message) {
   const previousFocus = document.activeElement;
@@ -144,6 +231,7 @@ async function copyText(value, message) {
     field.select();
     return;
   }
+  byId('preview-status').textContent = byId('preview-dialog').open ? message : '';
   byId('toast').textContent = message;
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => { byId('toast').textContent = ''; }, 2400);
@@ -178,6 +266,10 @@ grid.addEventListener('click', event => {
     button.setAttribute('aria-pressed', selected.has(id));
     button.textContent = selected.has(id) ? '已選用' : '＋ 選用';
     updateTray();
+  } else if (button.hasAttribute('data-preview')) {
+    previewId = id;
+    updatePreview();
+    byId('preview-dialog').showModal();
   } else if (button.hasAttribute('data-copy-ai')) {
     copyText(aiPrompt([id]), '已複製 AI 配色指令');
   } else if (button.hasAttribute('data-copy')) {
@@ -189,6 +281,14 @@ grid.addEventListener('click', event => {
 byId('clear').addEventListener('click', () => { selected.clear(); render(); });
 byId('copy-selected').addEventListener('click', () => copy([...selected].flatMap(cardColors), '已選色碼'));
 byId('copy-ai-selected').addEventListener('click', () => copyText(aiPrompt([...selected]), '已複製已選色組的 AI 配色指令'));
+byId('preview-modes').addEventListener('click', event => {
+  const button = event.target.closest('[data-purpose]');
+  if (!button) return;
+  byId('ai-purpose').value = button.dataset.purpose;
+  updatePreview();
+  byId('preview-modes').querySelector('[aria-pressed=true]').focus();
+});
+byId('copy-preview').addEventListener('click', () => copyText(aiPrompt([previewId]), '已複製此方案的 AI 指令'));
 byId('source-link').addEventListener('click', () => { byId('sources').open = true; });
 render();
 </script>
