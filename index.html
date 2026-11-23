@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>配色圖鑑</title>
+<style>
+:root{--paper:#f8f6ef;--ink:#23372e;--muted:#53635a;--line:#dcded3;--accent:#285443}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 "Noto Sans TC","Microsoft JhengHei",sans-serif}button,input,select{font:inherit;color:inherit}button,select{cursor:pointer}button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #577eab;outline-offset:3px}button{background:#fffdf7;border:1px solid var(--line);border-radius:10px;padding:8px 12px}button:hover:not(:disabled){border-color:var(--accent)}button:disabled{opacity:.48;cursor:default}.wrap{width:min(1320px,calc(100% - 60px));margin:auto}.top{border-bottom:1px solid var(--line);padding:15px 0}.top .wrap{display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.12em}.brand i{display:inline-block;width:20px;height:20px;vertical-align:middle;margin-right:9px;border-radius:50%;background:conic-gradient(#ce805c 25%,#e7cb9f 0 50%,#89a491 0 75%,#285443 0)}a{color:var(--accent);text-underline-offset:4px}.hero{margin-top:26px;padding:36px clamp(20px,4vw,58px);border-radius:22px;background:#e8eee3;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:32px}.hero h1{font:800 clamp(39px,6vw,74px)/1.1 "Noto Serif TC","PMingLiU",serif;letter-spacing:.07em;margin:0 0 14px}.hero p{margin:0;color:#395447}.hero-art{display:flex;height:150px;overflow:hidden;border-radius:85px 24px 85px 24px;transform:rotate(-3deg)}.hero-art i{flex:1}.filters{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}.filters input{min-width:0;width:min(320px,100%);border:1px solid var(--line);border-radius:10px;background:#fffdf8;padding:10px 14px}.tabs{display:flex;gap:6px;flex-wrap:wrap}.tabs button{border-radius:100px;padding:7px 13px}.primary,.tabs [aria-pressed="true"]{background:var(--accent);color:white;border-color:var(--accent)}.tray{margin-top:18px;border:1px solid #cfdacd;border-radius:14px;background:#edf1e8;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}.tray strong{display:block}.muted{color:var(--muted);font-size:.9rem}.chosen{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}.chosen i{width:16px;height:16px;border-radius:4px;border:1px solid #23372e35}.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.heading{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:20px 0 10px}.heading h2{margin:0;font-size:22px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}.card{border:1px solid var(--line);background:#fffefa;border-radius:15px;padding:13px;min-width:0}.card.selected{outline:2px solid #577b68;outline-offset:-2px}.card header,.card footer{display:flex;justify-content:space-between;gap:6px;align-items:center}.card h3{margin:0;font-size:17px}.swatches{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));gap:3px;margin:12px 0 9px}.swatch{padding:0;border:0;background:none;min-width:0;display:grid;gap:5px;text-align:center;border-radius:5px}.swatch i{display:block;height:55px;border-radius:5px;border:1px solid #23372e24}.swatch:hover i{outline:2px solid #23372e;outline-offset:-2px}.swatch code{font-size:clamp(9px,.85vw,12px);color:#434f46}.card footer button,.card select{font-size:13px;padding:6px 8px}.card select{background:#fffdf7;border:1px solid var(--line);border-radius:8px}.empty{grid-column:1/-1;padding:35px;text-align:center;border:1px dashed var(--line);border-radius:12px}.sources{margin:30px 0 38px;border-top:1px solid var(--line);padding-top:16px}.sources summary{cursor:pointer;font-weight:700}.sources li{margin:.4rem 0}#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#253e34;color:white;border-radius:10px;padding:10px 17px;max-width:calc(100% - 24px);box-shadow:0 5px 22px #0003;text-align:center}#toast:empty{visibility:hidden}dialog{max-width:calc(100% - 24px);width:500px;border:1px solid var(--line);border-radius:14px;color:var(--ink);background:#fffefa}dialog::backdrop{background:#23372e80}textarea{width:100%;min-height:90px;margin-bottom:8px;font:inherit}
+@media(max-width:1150px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.wrap{width:calc(100% - 36px)}}@media(max-width:540px){.wrap{width:calc(100% - 24px)}.grid,.hero{grid-template-columns:1fr}.hero{gap:15px;margin-top:14px;padding:23px}.hero-art{height:62px}.swatch code{font-size:11px}}
+.ai-settings{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-top:14px}.ai-settings select{border:1px solid var(--line);border-radius:8px;padding:6px 10px;background:#fffdf7}.card .ai-copy{width:100%;margin-top:8px;font-size:13px;padding:6px 8px;color:var(--accent);background:#edf1e8}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><span class="brand"><i aria-hidden="true"></i>配色圖鑑</span><a id="source-link" href="#sources">配色參考</a></div></header>
+<main class="wrap">
+<section class="hero"><div><h1>配色圖鑑</h1><p>為簡報、學習單和網頁挑一組好用的色票。</p></div><div class="hero-art" aria-hidden="true"><i style="background:#07405B"></i><i style="background:#DFCAB5"></i><i style="background:#560F2D"></i><i style="background:#1F4E2A"></i></div></section>
+<div class="filters"><input type="search" id="search" aria-label="搜尋名稱、風格或 HEX 色碼" placeholder="搜尋名稱、風格或 HEX 色碼"><div class="tabs" id="tabs" role="group" aria-label="配色分類"></div></div>
+<div class="ai-settings">
+<label for="ai-purpose">AI 配色用途</label>
+<select id="ai-purpose"><option value="web">網頁／HTML</option><option value="slides">簡報／教室投影</option><option value="document">文件／A4 學習單</option></select>
+<span class="muted">複製 AI 指令後，貼到 ChatGPT、Gemini 或其他 AI。</span>
+</div>
+<section class="tray" aria-label="已選色組"><div><strong id="chosen-count"></strong><span id="chosen-hint" class="muted">選用多組後，可一起複製色碼。</span><div class="chosen" id="chosen-colors" aria-hidden="true"></div></div><div class="actions"><button id="clear">清除</button><button id="copy-selected" class="primary">複製已選色碼</button><button id="copy-ai-selected" class="primary">複製已選 AI 指令</button></div></section>
+<div class="heading"><h2>探索色組</h2><span class="muted" id="results" aria-live="polite"></span></div>
+<div class="grid" id="grid"></div>
+<details class="sources" id="sources"><summary>配色分類與參考資料</summary><p>色票依下列網站的分類概念與風格編排。每組依順序顯示 2–8 色，前 4 色是預設搭配，後 4 色供延伸使用。</p><ul>
+<li>色輪搭配（同色系、鄰近色、互補色、三色配色） <a href="https://helpx.adobe.com/content/dam/help/en/pdf/after_effects_reference.pdf" target="_blank" rel="noopener">Adobe 色彩搭配規則</a></li>
+<li>風格靈感（粉彩、復古） <a href="https://colorhunt.co/palettes/vintage-pastel" target="_blank" rel="noopener">Color Hunt</a></li>
+<li>圖表配色（漸進、發散、類別） <a href="https://colorbrewer2.org/learnmore/schemes.html" target="_blank" rel="noopener">ColorBrewer</a></li>
+</ul></details>
+</main>
+<div id="toast" role="status"></div>
+<dialog id="manual"><form method="dialog"><label for="manual-text">請手動複製下方內容</label><textarea id="manual-text" readonly></textarea><button>關閉</button></form></dialog>
+<script>
+const palettes = [
+['深海與酒紅','復古','深色・沉穩','07405B DFCAB5 560F2D 1F4E2A A4776C F7EDE2 637E8B B7C6AA'],
+['山間新綠','自然','森林・清新','244D3A BBD0A5 EBE5D1 728866 39595F F8F5E9 9FAB79 674F3C'],
+['柑橘海灣','暖色','橙藍・互補色','DE7636 F8D68C 235D70 133C59 FBF1D8 ED9D58 62A4A7 854E35'],
+['薰衣草晨霧','柔霧','低飽和・紫灰','665B82 C8C4DB A4BCC3 F0EEE8 8387A2 3B394D DDE7E4 B69AAA'],
+['蜜桃奶霜','粉彩','粉橘・可愛','F2AD9D FAD7C8 F9EFDA 876D79 ECC9DB D79283 FDF6EC BBA7C2'],
+['深海玻璃','冷色','藍綠・鄰近色','113E55 1C7580 79BDB8 E1EBDE 275963 A8D4CF F2F8F1 3D95A0'],
+['赤陶夕照','暖色','大地・陶土','A44D39 E1A16F F5D6B0 673629 C27452 FCF1E5 937465 442C29'],
+['墨綠書房','復古','森林・經典','1B3B32 BA9558 7A493A EADCC0 B1B09A F6EEDB 506856 302B24'],
+['初夏教室','粉彩','校園・清新','A7D2F0 F5D887 F0AAB5 B8D8A9 536A85 E0D7EF F9F4E7 85C8BE'],
+['砂岸與海松','自然','沙色・大地','56776A E5D3B5 9BAF9D 7E614B F7EFE1 2C5349 C2AB8B AC7E67'],
+['秋日栗橙','暖色','落葉・大地','813E32 C57D43 EAC68D 4F4D38 F8EDDA A55D4D B2A06D 332D25'],
+['冬港夜藍','冷色','藍灰・沉穩','233753 51728E A1BBCB E5E9E6 335365 7997AF D1DCE2 172739'],
+['燕麥與茶玫瑰','柔霧','米色・乾燥花','A76D70 E4CED0 D4C7B5 5C5651 F7F1E9 B99589 8C9385 766575'],
+['奶油汽水','粉彩','馬卡龍・清新','A6DAD0 F9E29C F3C0C9 869EC2 D5C3EA E6F5EB D78382 4F6381'],
+['舊城洋紅','復古','街景・沉穩','772E4D C68E61 E5C9A0 344D52 A5606F 97A6A0 F9EAD8 3E2830'],
+['溪谷青苔','自然','溪流・青綠','2E5146 829C63 E3E4BE 64889B C4CD9A F3F0DD 42565B A4896A'],
+['珊瑚沙灘','暖色','珊瑚・夏日','DF715D F2A66F F7DDAC 207B75 F8EFE0 AA5045 9BC1B1 5E4037'],
+['風信子與晴空','冷色','藍紫・清新','4B55A1 7F9DD6 BFCFEA 6CAFC2 E2ECF8 2E3965 9790C6 B3D6E1'],
+['霧藍灰階','柔霧','藍灰・中性','667681 96A8B4 C6D2DA E9EEF0 3B4B58 B0B9BC D7E0E2 515F69'],
+['莓果布丁','粉彩','粉紫・甜美','C790B3 F1D0DD EBD0F4 F5E0AB 81577A E4A6AC FBF1E6 A6A0C3'],
+['復古百貨','復古','紅綠・招牌','AD463D E6B654 47776B F1DEB6 28484A CD785E 8F8A62 F8F1DF'],
+['島嶼稻田','自然','田野・明亮','3E654D 98A855 D5C477 F3E7BF 756041 E8CB8A C2CF99 466C70'],
+['山茶紅階','暖色','同色系・漸層','7A2336 B34356 DF8791 F7D5D8 54182A 9B2F47 EBA9B0 FEF0F1'],
+['夜空與冰川','冷色','同色系・藍','163D65 3676A5 7CB6DB D4EAF8 102945 5191C0 A4D0EA EFF7FD'],
+['灰綠茶席','柔霧','茶色・中性','54655A 889E8C C6D0C4 E8E4D9 9B8271 3C4A40 ADAE9B F7F3EA'],
+['杏桃與風鈴','粉彩','橙藍紫・柔和','F4BE97 C6D9F5 D9C8EF F6E5AE A7CAC7 FDEBDF 7F739D B58C75'],
+['學習進度','圖表','漸進・淺到深','EEF7F2 D3EADD A9D4BD 78B89A 539578 36775C 205A42 103E2D'],
+['觀點差異','圖表','發散・雙向','A84D2E F2C2A1 C1DCEB 2E6694 77341F D78356 72A9C9 183D62'],
+['活動分組','圖表','類別・區別','376293 CC763A 237A68 9B547E B38823 7062A5 B95552 58636D'],
+['石墨與紙','中性','黑白灰・單色系','202524 696F6C B6BAB4 E9EAE4 3D4440 909891 D1D6CE FAFAF6']
+].map(([name, category, tags, codes], id) => ({id,name,category,tags,colors:codes.split(' ').map(hex=>'#'+hex)}));
+const byId = id => document.getElementById(id);
+const grid = byId('grid');
+const tabs = byId('tabs');
+const search = byId('search');
+const selected = new Set();
+const counts = new Map();
+const categories = ['全部','暖色','冷色','自然','柔霧','粉彩','復古','中性','圖表'];
+let category = '全部';
+let toastTimer;
+const cardColors = id => palettes[id].colors.slice(0, counts.get(id) ?? 4);
+tabs.innerHTML = categories.map(label => `<button data-category="${label}" aria-pressed="${label === category}">${label}</button>`).join('');
+function card(p) {
+  const colors = cardColors(p.id);
+  const size = colors.length;
+  const active = selected.has(p.id);
+  return `<article class="card ${active ? 'selected' : ''}" data-id="${p.id}">
+    <header><h3>${p.name}</h3><span class="muted">${p.category}</span></header>
+    <div class="swatches" style="--cols:${Math.min(size,4)}">${colors.map(hex => `<button class="swatch" data-hex="${hex}" title="複製 ${hex}" aria-label="複製 ${hex}"><i style="background:${hex}"></i><code>${hex}</code></button>`).join('')}</div>
+    <footer><select aria-label="${p.name}的顏色數量">${Array.from({length:7}, (_, index) => index+2).map(total => `<option value="${total}" ${total === size ? 'selected' : ''}>${total} 色</option>`).join('')}</select><div class="actions"><button data-select aria-pressed="${active}">${active ? '已選用' : '＋ 選用'}</button><button data-copy title="複製整組色碼">複製整組</button></div></footer>
+  <button class="ai-copy" data-copy-ai aria-label="複製${p.name}的 AI 配色指令">複製 AI 配色指令</button>
+  </article>`;
+}
+function render() {
+  const query = search.value.trim().toUpperCase();
+  const matches = palettes.filter(p => (category === '全部' || category === p.category) &&
+    [p.name,p.category,p.tags,...p.colors].some(value => value.toUpperCase().includes(query)));
+  grid.innerHTML = matches.map(card).join('') || '<p class="empty">找不到符合的色組，試試其他名稱或色碼。</p>';
+  byId('results').textContent = `顯示 ${matches.length}／${palettes.length} 組`;
+  updateTray();
+}
+function updateTray() {
+  const colors = [...selected].flatMap(cardColors);
+  byId('chosen-count').textContent = `已選配色 · ${selected.size} 組／${colors.length} 色`;
+  byId('chosen-colors').innerHTML = colors.map(hex => `<i style="background:${hex}" title="${hex}"></i>`).join('');
+  byId('chosen-hint').hidden = colors.length > 0;
+  for (const id of ['clear', 'copy-selected', 'copy-ai-selected']) {
+    byId(id).disabled = colors.length === 0;
+  }
+}
+function copy(colors, label) {
+  return copyText(colors.join(', '), `已複製 ${label} · ${colors.length} 色`);
+}
+const aiUses = {
+  web: '網頁或 HTML。請指定頁面背景、卡片底色、標題、正文、次要文字、按鈕底色與按鈕文字，以及必要的邊框，最後附上可貼入 CSS 的 :root 變數。',
+  slides: '簡報與教室投影。請指定投影片底色、標題、內文、重點區塊底色與區塊文字。投影片資訊要讓後排容易辨識，正文對比盡量達 7:1。',
+  document: '文件或 A4 學習單。請指定頁面底色、標題、正文、表格表頭、格線及書寫區。書寫區用白底，並讓黑白影印後仍能透過粗體、框線及留白辨識區塊。'
+};
+function aiPrompt(ids) {
+  const colorList = ids.map(id => `- ${palettes[id].name}（${cardColors(id).length} 色）　${cardColors(id).join(', ')}`).join('\n');
+  return [
+    `請幫我為以下用途配色。${aiUses[byId('ai-purpose').value]}`,
+    `候選色票（優先使用）\n${colorList}`,
+    '請按用途分配色碼。若色票缺少合適的背景色或文字色，可加入白、近黑或必要的深淺變體，請標示補充色與原因。',
+    '用 WCAG 對比公式核算實際相鄰的文字與底色。一般文字、表格小字及按鈕標籤至少 4.5:1，符合 WCAG 大字定義的標題至少 3:1。對比不足時請更換配色。若兩塊底色接近，請用清楚的邊框、留白或標題區分。',
+    '請用繁體中文表格列出用途、HEX 色碼、相鄰背景 HEX 和文字對比值，並給出可直接套用的一組方案。'
+  ].join('\n\n');
+}
+async function copyText(value, message) {
+  const previousFocus = document.activeElement;
+  let copied = false;
+  try {
+    await navigator.clipboard.writeText(value);
+    copied = true;
+  } catch {
+    const field = document.createElement('textarea');
+    field.value = value;
+    field.style.cssText = 'position:fixed;left:0;top:0;opacity:0;pointer-events:none';
+    document.body.append(field);
+    field.select();
+    try { copied = document.execCommand('copy'); } catch {}
+    field.remove();
+    previousFocus?.focus();
+  }
+  if (!copied) {
+    const field = byId('manual-text');
+    field.value = value;
+    byId('manual').showModal();
+    field.select();
+    return;
+  }
+  byId('toast').textContent = message;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { byId('toast').textContent = ''; }, 2400);
+}
+tabs.addEventListener('click', event => {
+  const button = event.target.closest('button');
+  if (!button) return;
+  category = button.dataset.category;
+  for (const tab of tabs.children) tab.setAttribute('aria-pressed', tab === button);
+  render();
+});
+search.addEventListener('input', render);
+grid.addEventListener('change', event => {
+  const select = event.target.closest('select');
+  if (!select) return;
+  const article = select.closest('article');
+  const id = Number(article.dataset.id);
+  counts.set(id, Number(select.value));
+  article.outerHTML = card(palettes[id]);
+  grid.querySelector(`[data-id="${id}"] select`).focus({preventScroll:true});
+  updateTray();
+});
+grid.addEventListener('click', event => {
+  const button = event.target.closest('button');
+  if (!button) return;
+  const article = button.closest('article');
+  const id = Number(article.dataset.id);
+  if (button.hasAttribute('data-select')) {
+    if (selected.has(id)) selected.delete(id);
+    else selected.add(id);
+    article.classList.toggle('selected', selected.has(id));
+    button.setAttribute('aria-pressed', selected.has(id));
+    button.textContent = selected.has(id) ? '已選用' : '＋ 選用';
+    updateTray();
+  } else if (button.hasAttribute('data-copy-ai')) {
+    copyText(aiPrompt([id]), '已複製 AI 配色指令');
+  } else if (button.hasAttribute('data-copy')) {
+    copy(cardColors(id), palettes[id].name);
+  } else {
+    copy([button.dataset.hex], button.dataset.hex);
+  }
+});
+byId('clear').addEventListener('click', () => { selected.clear(); render(); });
+byId('copy-selected').addEventListener('click', () => copy([...selected].flatMap(cardColors), '已選色碼'));
+byId('copy-ai-selected').addEventListener('click', () => copyText(aiPrompt([...selected]), '已複製已選色組的 AI 配色指令'));
+byId('source-link').addEventListener('click', () => { byId('sources').open = true; });
+render();
+</script>
+</body>
+</html>
